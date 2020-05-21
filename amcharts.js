@@ -209,7 +209,7 @@
 		labelBullet.label.propertyFields.horizontalCenter = "center";
 		labelBullet.label.textAlign = "middle";
 		console.log("/////////////// Sankey End");
-		}); 	
+		}; 	
 
 
 
