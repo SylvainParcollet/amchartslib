@@ -4,7 +4,7 @@
     var Ar = [];
     var xvaluearr = [];	
     var yvaluearr = [];	
-	var	typeOfChart;
+	var	typeOfChart = "XYChart";
 
 
     let template = document.createElement("template");
