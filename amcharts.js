@@ -617,17 +617,17 @@ polygonSeries.events.on("inited", function () {
 				const css = document.createElement('div');
 				if (typeOfChart === "Sankey")
 				{
-					css.innerHTML = '<style>#chartdiv {margin:0 auto;width: 100%; height: 1200px;overflow:hidden;}</style>'
+					css.innerHTML = '<style>#chartdiv {margin:0 auto;width: 100%; height: 900px;overflow:hidden;}</style>'
 					console.log("@@@@@@@@ Sankey CSS  @@@@@@@@");		
 				}
 				else if (typeOfChart === "Map")
 				{
-					css.innerHTML = '<style>#chartdiv {max-width: 100%;height: 1200px;background-color:#fbebdb;}</style>'
+					css.innerHTML = '<style>#chartdiv {max-width: 100%;height: 900px;background-color:#fbebdb;}</style>'
 					console.log("@@@@@@@@ Map css  @@@@@@@@");						
 				}
 				else				
 				{
-					css.innerHTML = '<style>#chartdiv {width: 100%; height: 1200px;}</style>'
+					css.innerHTML = '<style>#chartdiv {width: 100%; height: 900px;}</style>'
 					console.log("@@@@@@@@ XYChart CSS  @@@@@@@@");		
 				}
 		shadowRoot.appendChild(css);	
