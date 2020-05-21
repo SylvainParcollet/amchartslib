@@ -4,7 +4,7 @@
 	"name": "amchart widget",
 	"description": "amchart demo",
 	"newInstancePrefix": "Amchart",
-	"icon": "https://sylvainparcollet.github.io/amchartslib/amchart.png",
+	"icon": "https://sylvainparcollet.github.io/amchartslib/amcharticon.png",
 	"vendor": "Karamba",
 	"eula": "EULA",
 	"license": "2.0",
