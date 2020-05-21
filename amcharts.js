@@ -4,7 +4,7 @@
     var Ar = [];
     var xvaluearr = [];	
     var yvaluearr = [];	
-	var	typeOfChart = "XYChart";
+	
 
 
     let template = document.createElement("template");
@@ -262,7 +262,7 @@
            console.log(changedProperties);
 
 	   console.log("%%%%%% INPUT %%%%%%");	
-		
+
             if ("charttype" in changedProperties) {
                 console.log("charttype:" + changedProperties["charttype"]);
                 this.$charttype = changedProperties["charttype"];
@@ -282,7 +282,7 @@
 			}
 				
 
-			typeOfChart = this.$charttype;
+			var typeOfChart = this.$charttype;
 			console.log("Type of chart : " + typeOfChart);	
 			xvaluearr = this.$xvalue.split(';');
 			console.log(xvaluearr);		
@@ -301,31 +301,27 @@
                 div.innerHTML = '<div id="chartdiv"></div>';
                 shadowRoot.appendChild(div);
 				console.log(div);	
-				
+				const css = document.createElement('div');
 				if (typeOfChart === "Sankey")
 				{
-					const css = document.createElement('div');
 					css.innerHTML = '<style>#chartdiv {margin:0 auto;width: 100%; height: 800px;overflow:hidden;}</style>'
-					shadowRoot.appendChild(css);
-					console.log("@@@@@@@@   @@@@@@@@");		
-					var mapcanvas_divstr = shadowRoot.getElementById("chartdiv");
+					console.log("@@@@@@@@ Sankey CSS  @@@@@@@@");		
 				}
 				else				
 				{
-					const css = document.createElement('div');
 					css.innerHTML = '<style>#chartdiv {width: 100%; height: 500px;}</style>'
-					shadowRoot.appendChild(css);
-					console.log("@@@@@@@@   @@@@@@@@");		
-					var mapcanvas_divstr = shadowRoot.getElementById("chartdiv");
+					console.log("@@@@@@@@ XYChart CSS  @@@@@@@@");		
 				}
+		shadowRoot.appendChild(css);	
+		var mapcanvas_divstr = shadowRoot.getElementById("chartdiv");	
                 console.log(mapcanvas_divstr);	
 		Ar.push({
                     'div': mapcanvas_divstr
                 });
 	
-		console.log("@@@@@@@@   @@@@@@@@");
+		console.log("@@@@@@@@ CSS  @@@@@@@@");
 		console.log(css);
-		console.log("@@@@@@@@   @@@@@@@@");
+		console.log("@@@@@@@@ Shadow Root   @@@@@@@@");
 		console.log(shadowRoot);
 		console.log("@@@@@@@@  html @@@@@@@@");		
 				async function LoadLibs() {
