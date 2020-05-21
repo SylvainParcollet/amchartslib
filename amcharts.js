@@ -239,5 +239,5 @@
 			console.log("onCustomWidgetDestroy");
         }
     }
-    customElements.define("com-fd-amchart", Amchartmain);
+    customElements.define("com-karamba-amchart", Amchartmain);
 })();
