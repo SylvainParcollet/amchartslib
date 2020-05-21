@@ -664,7 +664,7 @@ polygonSeries.events.on("inited", function () {
 					console.log("************Sankey chart************");    
 					Sankeychartkaramba(Ar[0].div,"");
 				}
-				elseif (typeOfChart === "Map")
+				else if (typeOfChart === "Map")
 				{
 					console.log("************Map chart************");    
 					Mapkaramba(Ar[0].div,"");	
