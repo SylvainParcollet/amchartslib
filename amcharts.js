@@ -831,6 +831,11 @@ polygonSeries.events.on("inited", function () {
 					css.innerHTML = '<style>#chartdiv {max-width: 100%;height: 800px;background-color:#fbebdb;}</style>'
 					console.log("@@@@@@@@ Map css  @@@@@@@@");						
 				}
+				else if (typeOfChart === "Radar")
+				{
+					css.innerHTML = '<style>#chartdiv {max-width: 100%;width: 100%;height: 800px;background-color:#5f6062;}</style>'
+					console.log("@@@@@@@@ Radar css  @@@@@@@@");						
+				}
 				else				
 				{
 					css.innerHTML = '<style>#chartdiv {width: 100%; height: 800px;}</style>'
@@ -874,7 +879,12 @@ polygonSeries.events.on("inited", function () {
 				{
 					console.log("************Map chart************");    
 					Mapkaramba(Ar[0].div,"");	
-				}	
+				}
+				else if (typeOfChart === "Radar")
+				{	
+					console.log("************Radar chart************");    
+					Radarchartkaramba(Ar[0].div,"");
+				}
 				else
 				{	
 					var arraydata = [];
