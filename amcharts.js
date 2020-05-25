@@ -869,6 +869,8 @@ polygonSeries.events.on("inited", function () {
 				}
 				LoadLibs();
 		} else {		
+				console.log("**********///////********");
+				console.log("Type of chart : " + typeOfChart);
 				if (typeOfChart === "Sankey")
 				{
 					
