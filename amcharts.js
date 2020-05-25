@@ -887,6 +887,8 @@ polygonSeries.events.on("inited", function () {
 				}
 				else
 				{	
+					console.log("************Lolipop chart ************");    
+					console.log(typeOfChart);
 					var arraydata = [];
 					for (var i = 0; i < xvaluearr.length; i++) {
 						arraydata.push({
