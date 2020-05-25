@@ -186,7 +186,7 @@
 		valueAxis.renderer.minLabelPosition = 0.05;
 		valueAxis.renderer.axisAngle = 90;
 		valueAxis.cursorTooltipEnabled = false;
-		valueAxis.renderer.labels.template.fill = am4core.color("#ffffff");
+		valueAxis.renderer.labels.template.fill = am4core.color("#7b7875");
 
 		// Create series
 		var columnSeries = chart.series.push(new am4charts.RadarColumnSeries());
@@ -194,7 +194,7 @@
 		columnSeries.dataFields.valueY = "distance";
 		columnSeries.columns.template.strokeOpacity = 0;
 		columnSeries.columns.template.width = am4core.percent(95);
-		columnSeries.fill = am4core.color("#ffffff");
+		columnSeries.fill = am4core.color("#7b7875");
 		columnSeries.fillOpacity = 0.6;
 		columnSeries.tooltip.fontSize = 10;
 		columnSeries.tooltip.pointerOrientation = "down";
@@ -212,7 +212,7 @@
 		weekDayAxis.renderer.line.disabled = true;
 		weekDayAxis.renderer.axisAngle = 90;
 		weekDayAxis.cursorTooltipEnabled = false;
-		weekDayAxis.renderer.labels.template.fill = am4core.color("#ffffff");
+		weekDayAxis.renderer.labels.template.fill = am4core.color("#7b7875");
 
 		// bubble series
 		var bubbleSeries = chart.series.push(new am4charts.RadarSeries())
@@ -284,7 +284,7 @@
 		var label = chart.radarContainer.createChild(am4core.Label);
 		label.horizontalCenter = "middle";
 		label.verticalCenter = "middle";
-		label.fill = am4core.color("#ffffff");
+		label.fill = am4core.color("#7b7875");
 		label.fontSize = 12;
 		label.fontWeight = "bold";
 		label.text = "WEEKLY\nTOTALS";
@@ -297,10 +297,10 @@
 		title.align = "left";
 		title.wrap = true;
 		title.width = 200;
-		title.text = "[bold]IN " + firstDay.getFullYear() + "\nI CYCLED " + Math.round(total) + " km.\n[font-size:11; #ffffff]Each circle represents a bike ride. Size represents distance.";
+		title.text = "[bold]IN " + firstDay.getFullYear() + "\nI CYCLED " + Math.round(total) + " km.\n[font-size:11; #7b7875]Each circle represents a bike ride. Size represents distance.";
 
 		var link = chart.createChild(am4core.TextLink);
-		link.fill = am4core.color("#ffffff");
+		link.fill = am4core.color("#7b7875");
 		link.fontSize = 13;
 		link.url = "https://www.instagram.com/brian_devine/";
 		link.valign = "bottom";
