@@ -156,7 +156,7 @@
 
 
 		// CHART
-		var chart = am4core.create("chartdiv", am4charts.RadarChart);
+		var chart = am4core.create(divid, am4charts.RadarChart);
 		prepareDistanceData(data);
 
 		chart.innerRadius = am4core.percent(15);
